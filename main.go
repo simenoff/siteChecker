@@ -17,7 +17,7 @@ import (
 
 const position_file = ".fPosition.log"
 const db_dir = ".domains.db/"
-const ru_file = ".TITLES.OPTION.txt"
+const ru_file = ".TITLES.txt"
 const log_file = ".log"
 
 const cThreads = 1000
@@ -104,7 +104,7 @@ func bot(chunkDomains []string) {
 
 		domain = strings.TrimSpace(chunkDomains[i])
 		url := "https://" + domain + "/"
-		//ref := "https://qiper.ru/" + domain
+		//ref := "https://8pw.ru/"
 
 		//
 		req, err := http.NewRequest("GET", url, nil)
